@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.evgen'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+// https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    implementation 'org.hibernate:hibernate-core:6.4.4.Final'
+    implementation 'org.postgresql:postgresql:42.7.2'
+
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+}
